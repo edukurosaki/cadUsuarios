@@ -1,0 +1,27 @@
+{
+  "name": "cadusuarios",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:all": "npm-run-all -p dev:*",
+    "start:server": "nodemon src/server.js",
+    "start:queue": "nodemon src/queue.js"
+  },
+  "author": "Eduardo Alves Francisco",
+  "license": "ISC",
+  "dependencies": {
+    "bull": "^3.20.0",
+    "bull-board": "^1.1.2",
+    "dotenv": "^8.2.0",
+    "nodemailer": "^6.4.16",
+    "redis": "^3.0.2",
+    "redis-server": "^1.2.2"
+  },
+  "devDependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6",
+    "password-generator": "^2.3.2",
+    "sucrase": "^3.16.0"
+  }
+}
